@@ -1,5 +1,5 @@
 import HornedBeast from "./hornedbeast";
-
+// this component passes data through the hornedbeast component it should render an image with a title and description of each image
 function Main() {
     return (
         <div>

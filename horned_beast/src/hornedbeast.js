@@ -1,4 +1,4 @@
-
+// this component renders a title, decription, and image of a horned animal
 function HornedBeast(props) {
     return (
         <div>

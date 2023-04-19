@@ -1,4 +1,4 @@
-
+//this component renders a header for the page
 function Header() {
     return (
         <h1>

@@ -1,4 +1,4 @@
-
+// this compnonet renders a footer for the page
 function Footer() {
     return (
         <footer>
