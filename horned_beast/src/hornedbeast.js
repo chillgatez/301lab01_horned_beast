@@ -1,17 +1,22 @@
 // this component renders a title, decription, and image of a horned animal
-import {useState} from "react"
+import { useState } from "react"
+import Card from "react-bootstrap/Card"
+import Button from "react-bootstrap/Button"
+
 function HornedBeast(props) {
     const [favorite, setFavorite] = useState(0)
-    function increment (){
+    function increment() {
         setFavorite(favorite + 1)
     }
     return (
-        <div>
-            <h2>{props.title}</h2>
-            <p>{props.description}</p>
-            <img src={props.image} alt={props.description} onClick = {increment}/>
-            <p> &#9829; {favorite} </p>
-        </div>
+        <Card style={{ width: '18rem' }}>
+            <Card.Img src={props.image} alt={props.description}/>
+            <Card.Body>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Text>{props.description}</Card.Text>
+                <Button onClick={increment}> &#9829; {favorite} </Button>
+            </Card.Body>
+        </Card>
     );
 }
 

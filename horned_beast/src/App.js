@@ -1,4 +1,4 @@
-import './App.css'; // these lines import components from other files
+// these lines import components from other files
 import Header from './header' //
 import Footer from './footer' //
 import Main from './main' //
