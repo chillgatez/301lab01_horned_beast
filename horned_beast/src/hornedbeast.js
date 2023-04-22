@@ -9,7 +9,7 @@ function HornedBeast(props) {
         setFavorite(favorite + 1)
     }
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card style={{ width: '20rem' }}>
             <Card.Img src={props.image} alt={props.description}/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
