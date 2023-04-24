@@ -27,3 +27,14 @@ Start time: 13:45
 Finish time: 14:11
 
 Actual time needed to complete: 26min
+
+
+## Lab 3 Feature #1: Display a Modal
+
+Estimate of time needed to complete: 1hr
+
+Start time: 18:00
+
+Finish time: _____
+
+Actual time needed to complete: _____

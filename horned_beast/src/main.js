@@ -13,7 +13,9 @@ function Main() {
         <div>
             {Data.map(value => {
 
-            return <HornedBeast title = {value.title} description = {value.description} image = {value.image_url} />})}
+            return <HornedBeast title = {value.title}
+            description = {value.description}
+            image = {value.image_url} />})}
 
         </div>
         </Container>
