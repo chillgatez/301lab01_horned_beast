@@ -6,16 +6,16 @@ import Container from "react-bootstrap/Container"
 
 
 
-function Main() {
+function Main(props) {
        return (
        <Container> 
 
         <div>
-            {Data.map(value => {
+            {Data.map( (value, index) => {
 
-            return <HornedBeast title = {value.title}
+            return <HornedBeast key ={index} title = {value.title}
             description = {value.description}
-            image = {value.image_url} />})}
+            image = {value.image_url} displaySelection={props.displaySelection} setclickedBeast = {props.setclickedBeast} setdisplaySelection ={props.setdisplaySelection} value ={value}/>})}
 
         </div>
         </Container>

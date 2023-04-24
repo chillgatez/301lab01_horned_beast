@@ -1,28 +1,24 @@
-import {useState} from "react"
-import Modal from  'react-bootstrap/Modal'
+
+import Modal from 'react-bootstrap/Modal'
 import Button from 'react-bootstrap/Button'
 
-function SelectedBeast (props) {
-    const [visibility, setVisibility] = useState(false);
-
-    const handleVisibility = () => setVisibility(true);
+function SelectedBeast(props) {
 
     function handleClose() {
-        setVisibility(false);
+        props.setdisplaySelection(false)
     }
 
-  
+
 
     return (
         <div>
-            <Modal show={visibility} onHide={() => {handleClose()}}>
-            <img src=""/>
+            <Modal show={props.displaySelection} onHide={() => { handleClose() }}>
+                <img src= {props.clickedBeast.image_url} />
+                <Modal.Header closeButton>
+                    <Modal.Title>{props.clickedBeast.Title}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{props.clickedBeast.description}</Modal.Body>
             </Modal>
-            <Modal.Header closeButton>
-                <Modal.Title>Selected Beast</Modal.Title>
-            </Modal.Header>
-
-            
         </div>
     )
 }

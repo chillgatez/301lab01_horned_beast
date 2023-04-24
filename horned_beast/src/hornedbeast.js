@@ -10,7 +10,7 @@ function HornedBeast(props) {
     }
     return (
         <Card style={{ width: '20rem' }}>
-            <Card.Img src={props.image} alt={props.description}/>
+            <Card.Img onClick={() => {props.setdisplaySelection(true); props.setclickedBeast(props.value)}} src={props.image} alt={props.description}/>
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.description}</Card.Text>

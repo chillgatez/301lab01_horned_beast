@@ -11,23 +11,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // this component is where each of the imported components will come together and build the html for the page
 function App() {
   const [clickedBeast, setclickedBeast] = useState(false);
-  {/* this sets the state for each time an image is selected*/ }
-  const [displaySelection, setdisplaySelection] = useState(undefined);
+  {/* this sets the state for each time an image is selected */ }
+  const [displaySelection, setdisplaySelection] = useState(false);
   {/* this sets state to control the display of the modal */ }
 
-  let selectedBeastComponent = <SelectedBeast clickedBeast= {clickedBeast} setclickedBeast = {setclickedBeast}/>;
-
-  if (clickedBeast === false)  {
-    selectedBeastComponent = <></>
-  };
 
 
 
   return (
     <div className="App">
       <Header />
-      {selectedBeastComponent}
-      <Main clickedBeast={clickedBeast} setclickedBeast = {setclickedBeast}/>
+      {clickedBeast && <SelectedBeast displaySelection={displaySelection} setdisplaySelection={setdisplaySelection} clickedBeast={clickedBeast}/>}
+      <Main displaySelection={displaySelection} setclickedBeast={setclickedBeast} setdisplaySelection={setdisplaySelection} />
       <Footer />
     </div>
   );
