@@ -38,3 +38,13 @@ Start time: 18:00; 11:30
 Finish time: 20:00; 15:35
 
 Actual time needed to complete: 6hrs 5mins
+
+##  Lab 4 Feature #1: Filter by Number of Horns
+
+Estimate of time needed to complete: 1hr
+
+Start time: 1:30
+
+Finish time: 15:10
+
+Actual time needed to complete: 1hr 40mins
